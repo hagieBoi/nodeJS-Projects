@@ -1,0 +1,9 @@
+<header class="main-header">
+    <nav class="main-header-nav">
+        <p class = "logo"><%= siteName %> </p>
+        <ul class="main-header-list">
+            <li class="main-header__items"><a href = "/" class="<%= ((path === '/') ? "active" : "") %>">Shop</a></li>
+            <li class="main-header__items"><a href = "/admin/add-product " class="<%= ((path !== '/') ? "active" : "") %>">Add Product</a></li>
+        </ul>
+    </nav>
+</header>

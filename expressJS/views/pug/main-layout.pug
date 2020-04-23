@@ -4,17 +4,16 @@ head
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   title #{docTitle}
   link(rel='stylesheet' href='../stylesheet.css')
+  block styles
+
 header.main-header
   nav.main-header-nav
     p.logo #{siteName}
+    .verticalDiv
     ul.main-header-list
       li.main-header__items
-        a(href='/') Shop
+        a(href='/', class = (path === `/`) ? `active` : `` ) Shop
       li.main-header__items
-        a.active(href='/admin/add-product') Add Product
-main
-  form.product-form(action='/admin/add-product' method='POST')
-    .form-control
-      label(for='title') Title:
-      input#title(type='text' name='title')
-      button(type='submit') Add product
+        a(href='/admin/add-product', class = ((path ===`/admin/add-product`) ? `active` : ``))  Add Product
+block content
+

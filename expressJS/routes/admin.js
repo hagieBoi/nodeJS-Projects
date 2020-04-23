@@ -11,7 +11,7 @@ const products = [];
 
 
 router.get(`/add-product`, (req, res, next) =>  {
-    res.render(`add-product`, {docTitle: `Add product`, siteName: siteName.siteName});
+    res.render(`add-product`, {docTitle: `Add product`, siteName: siteName.siteName, path: `/admin/add-product`});
 });
 
 router.post(`/add-product`, (req, res, next) =>  {

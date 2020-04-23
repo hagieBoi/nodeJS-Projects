@@ -13,7 +13,7 @@ const router = express.Router();
 console.log(path.join(__dirname, `..`, `error.png`));
 
 router.use((req,res,next) => {
-    res.status(404).render(`error404`, {docTitle: `Page not found.`, logo: siteName.siteName});
+    res.status(404).render(`error404`, {docTitle: `Page not found.`, siteName: siteName.siteName, path: null});
 });
 
 module.exports = router;

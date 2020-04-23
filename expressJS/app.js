@@ -13,12 +13,13 @@ const errorRoutes = require(`./routes/errors`);
 //3rd party dependencies
 const bodyParser = require('body-parser');
 const express = require('express');
+const ejs = require(`ejs`);
 
 //initialize expressJS
 const app = express();
 
 //initialize templating engine
-app.set(`view engine`, `pug`);
+app.set(`view engine`, ejs.name);
 app.set(`views`, `views`);
 
 //parse requests
