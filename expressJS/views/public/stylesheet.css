@@ -75,6 +75,7 @@ button:active{
     align-items: center;
 }
 .product-form{
+    padding-top: 3rem;
     width: 20rem;
     max-width: 90%;
     margin: auto;

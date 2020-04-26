@@ -7,7 +7,7 @@ const path = require('path');
 
 //created dependencies
 const shopRoutes = require(`./routes/shop`);
-const adminData = require(`./routes/admin`);
+const adminRoutes = require(`./routes/admin`);
 const errorRoutes = require(`./routes/errors`);
 
 //3rd party dependencies
@@ -30,7 +30,7 @@ app.use(express.static(path.join(__dirname,'./views/public')));
 app.use(express.static(path.join(__dirname, './views/images')));
 
 //middleware routes
-app.use(`/admin`,adminData.routes);
+app.use(`/admin`,adminRoutes);
 app.use(shopRoutes);
 app.use(errorRoutes);
 
