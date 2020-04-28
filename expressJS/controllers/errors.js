@@ -5,5 +5,6 @@ exports.getError = (req,res,next) => {
     res.status(404).render(`error404`, {
         docTitle: `Page not found.`, 
         siteName: siteName.siteName, 
+        cartNum: 0,
         path: null});
     };

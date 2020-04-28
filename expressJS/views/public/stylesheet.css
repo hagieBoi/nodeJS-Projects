@@ -51,6 +51,7 @@ button:active{
     padding: 0;
     margin: 0 0 0 1rem;
     display: flex;
+    width: 50%;
 }
 .main-header__items{
     margin: 0 1rem;
@@ -81,16 +82,25 @@ button:active{
     margin: auto;
 }
 .form-control label,
-.form-control input {
+.form-control input,
+.form-control textarea {
     display: block;
     width:100%;
+    margin-bottom: .25rem;
 }
 
-.form-control input{
+.form-control input,
+.form-control textarea{
     border: 1px solid #343742;
     font: inherit;
     border-radius: 2px;
 }
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline-color: #4e6e58 ;
+}
+
 .logo{
     color: white;
     font-size: 1.5rem;
@@ -108,7 +118,15 @@ button:active{
     background-color: white;
 
   }
-  
+
+  .card__header{
+    color:black;
+  }
+
+  .card__content{
+    background-color: white;
+  }
+
   .card__header,
   .card__content {
     padding: 1rem;
@@ -123,21 +141,26 @@ button:active{
     max-width: 20rem;
   }
   
+
   article.card.product-item{
     margin-top: 1.5rem;
     max-width: 20rem;
   }
 
   .card__image {
-    width:100%;
+    background-color: white;
   }
   
   .card__image img {
     display: block;
+    width: 20rem;
+    height: auto;
     margin: auto;
+
   }
   
   .card__actions {
+      background-color: white;
       padding: 1rem;
       text-align: center;
   }
@@ -188,4 +211,22 @@ button:active{
     width: 0;
     border-left: 1px solid white;
     margin-left: 2rem;
+  }
+
+  .delete{
+    display:block;
+  }
+
+  .cart{
+  justify-content: right;
+  padding-right: .5rem;
+  }
+
+  .cart-number{
+    color: #b0413e;
+  ;
+  }
+
+  .product__price {
+    text-align: center;
   }
